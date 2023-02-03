@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o>
+	<head>
+		<title>Yang Li</title>
+		<link href="css/personal2.css" type="text/css" rel="stylesheet">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8", name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-20813770-1']);
+		  _gaq.push(['_setDomainName', 'none']);
+		  _gaq.push(['_setAllowLinker', true]);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	    <script src="jquery.js"></script> 
+	    <script> 
+	        $(function(){
+	            $("#includedPubs").load("publications.html");
+				$("#includedNews").load("news.html")
+				$("#includedPCs").load("committees.html")
+				$("#includedAdvising").load("advising.html")
+				$("#includedTeaching").load("teaching.html")
+				document.getElementById("defaultOpen").click();
+	        });
+		</script>
+		<script>
+			function openPubs(evt, paper_type) {
+			    var i, tabcontent, tablinks;
+			    tabcontent = document.getElementsByClassName("paper");
+			    for (i = 0; i < tabcontent.length; i++) {
+			      tabcontent[i].style.display = "none";
+			    }
+			    tablinks = document.getElementsByClassName("tablinks");
+			    for (i = 0; i < tablinks.length; i++) {
+			      tablinks[i].className = tablinks[i].className.replace(" active", "");
+			    }
+			    tabcontent = document.getElementsByClassName(paper_type);
+			    for (i = 0; i < tabcontent.length; i++) {
+			      tabcontent[i].style.display = "block";
+			    }
+			    evt.currentTarget.className += " active";
+			}
+		</script>
+	</head>
+	
+	<body>
+		<!-- Header Begin -->
+		<div>
+			<div style="float: left">
+				<div style="font-size: 3em; margin: 0.2em 0 0.2em 0">
+					Yang Li<br>
+				</div>
+				<div style="color: gray; font-size: 1em; margin: 0 0 0.5em 0">
+					first last name @ acm dot org
+				</div>
+			</div>
+			<div style="color: gray; font-size: 0.9em; float: right; text-align: right; margin: 2em 2em 0.5em 0">
+				Google Inc.<br/>
+				1600 Amphitheatre Parkway<br/>
+				Mountain View, CA 94043 USA<br/>
+			</div>
+		</div>
+		<!-- Header End -->
+		<!-- Header Separator -->
+	 	<div style="clear: left">
+			<hr style="margin-left: 0px; font-size: %; height: 1px; border-width: 0; color:#eee; background-color:#eee; width: 100%"/>
+     	</div>
+		<!-- content start -->
+     	<div id="content">
+	   		<div id="left_col">
+				<!-- Bio Begin -->
+				<div id="bio">
+					<img src="images/portrait.png" class="thumbnail"/>
+					My research interests are at the intersection of Human Computer Interaction and Deep Learning. 
+					I currently focus on general deep learning research, and models for solving human interactive intelligence 
+					and improving user experiences. In my spare time, I build and fix things. 
+					Check out <a href="treehouse.html">my recent treehouse project</a>.
+					<p>
+						<b>Bio</b>&nbsp;&middot;&nbsp;Yang is a Senior Staff Research Scientist at 
+						<a href="https://research.google/people/author38946/">Google Research</a>, 
+						and an affiliate faculty member at <a href="http://www.cs.washington.edu/">University of Washington CSE</a>. 
+						He earned a Ph.D. degree in Computer Science from the <a href="http://english.cas.ac.cn">Chinese Academy of Sciences</a>, 
+						and conducted postdoctoral research at <a href="http://www.eecs.berkeley.edu/">UC Berkeley EECS</a>. 
+						He led the development of next app prediction on Android that is in use by tens of millions of users, 
+						which pioneered on-device interactive ML on Android, 
+						and wrote <a href="https://en.wikipedia.org/wiki/Google_Gesture_Search">Gesture Search</a>, 
+						an once popular tool on Android that shows the promise of gesture-based interaction.
+						Yang has extensively published in top venues across both the HCI and ML fields, 
+						including CHI, UIST, ICML, ACL, EMNLP, CVPR, NeurIPS (NIPS), ICLR and KDD, and has constantly served on 
+						program committees.
+					 </p>
+					 <p><a href="https://twitter.com/yangli169" class="twitter-follow-button" data-show-count="false">Follow @Twitter</a></p>
+				 </div>
+				 <div class="sectiontitle">
+					 Recent Papers
+				 </div>
+				 
+				 <!-- Bio End -->
+				 <div class="tab">
+					 <button class="tablinks" onclick="openPubs(event, 'paper')" id="defaultOpen">All</button>
+				     <button class="tablinks" onclick="openPubs(event, 'hci')">Human-Computer Interaction</button>
+				     <button class="tablinks" onclick="openPubs(event, 'ml')">Deep Learning</button>
+					 <button class="tablinks" onclick="openPubs(event, 'scholar')">Google Scholar</button>
+				 </div>
+				 <!-- <div id="includedPubs"></div>-->
+
+				 <div style="margin: 1em 0 0 0;">
+					 <div id="includedPubs"></div>
+					 <div class="scholar paper">
+					     <p class ="ptitle" >
+							 <a href="https://scholar.google.com/citations?user=ZZdB48QAAAAJ&hl=en">
+								 Google Scholar 
+							 </a>
+						 </p>
+					 </div>
+        		 </div> <!-- end of paper section -->
+			 </div> <!-- left column end -->
+			 <div id="right_col">
+				 <div class="sectiontitle">
+					 News
+				 </div>
+				 <div style="margin: 0 0 1.5em 0;">
+					 <div id="includedNews"></div>
+				 </div>
+				 <!-- end news -->
+				 <div class="sectiontitle">
+					 Program Committees & Reviewers
+				 </div>
+				 <div id="pc">
+				 	 <div id="includedPCs"></div>
+				 </div>
+				 <!-- end pcs -->
+				 <div class="sectiontitle">
+					 Research Advising
+			  	 </div>
+				 <div style="margin: 0 0 1.5em 0;">
+					 <div id="includedAdvising"></div>
+				 </div>
+				 <!-- end mentoring -->
+				 <div class="sectiontitle">
+					 Teaching & Lecturing
+			  	 </div>
+				 <div style="margin: 0 0 1.5em 0;">
+					 <div id="includedTeaching"></div>
+				 </div>
+				 <!-- end teaching -->
+			 </div>
+			 <!-- right column end -->
+		</div> <!-- content end -->
+	</body>
+</html>
