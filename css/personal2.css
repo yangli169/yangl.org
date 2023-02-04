@@ -1,0 +1,149 @@
+html>body { font-size: 15px; }
+
+body {
+	background: white; color: #464646;
+	font-family: sans-serif;
+	margin: auto; padding:1em; width: auto;
+	font-size: 100%;
+}
+
+#content {
+	margin: .9em 0 0 0;
+}
+#content a:link, #content a:active, #content a:visited {color:#404099; text-decoration:none; border-color:#404069}
+#content a:hover {color:#404096; text-decoration:underline;  border-color:#404069}
+
+#bio {
+	font-size: 1em;
+	display: table-row;
+}
+
+.thumbnail {
+	float:left; 
+	margin: 0 1em 1em 0;
+	border: 1px #ddd solid;
+}
+
+#left_col {
+	float: left;
+	width: 74%;
+	margin: 0 0 0 0;
+	border-right: #eee 1px solid;
+	padding-right: 2%;
+}
+
+#right_col {
+	float: left;
+	width: 20%;
+	padding-left: 2%;
+}
+
+.paper {
+  clear: left; 
+  margin: 0 0 1.5em 0
+}
+
+.ptitle {
+	font-size: 1em;
+	font-weight: plain;
+	margin: 0 0 0.1em 0;
+}
+
+.author {
+	font-size: .9em;
+	margin: 0 0 0.1em 0;
+}
+
+.conference {
+	font-size: .9em;
+	font-style: italic;
+	margin: 0 0 0.1em 0;
+}
+
+.highlight {
+	font-size: .9em;
+	font-weight: bold;
+	color: #a00;
+	margin: 0 0 0 0;
+}
+
+.tab {
+  overflow: hidden;
+  border: none solid #ccc;
+  /*background-color: #eee;*/
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: 0s;
+  font-size: 1.0em;
+  font-weight: plain;
+  /*border-bottom: 3px solid transparent;*/
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  /* background-color: #ddd; */
+  border-bottom: 3px solid #bbf;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  /* background-color: #ccc; */
+  border-bottom: 3px solid #55f;
+}
+
+.event {
+	font-size: 1em;
+	margin: 0 0 0.5em 0;
+}
+
+.eventname {
+	font-size: .9em;
+	font-weight: plain;
+}
+
+.date {
+	font-size: .8em;
+	color: #888;
+}
+
+.pastdate {
+	font-size: .8em;
+	color: #aaa;
+}
+
+.sectiontitle {
+	font-weight: bold; color: #454545;
+	font-variant: small-caps; 
+	text-align: left; 
+	margin: 1em 0 .5em 0;
+	font-size: 1em;
+}
+
+#pc {
+	font-size: .8em;
+	font-weight: plain;
+	margin: 0 0 1.5em 0;
+}
+
+
+.student {
+	clear: left; 
+	margin: 0 0 0.3em 0;
+	font-size: .8em;
+	font-weight: plain;
+}
+
+.studentbio {
+	font-size: 0.8em;
+	color: #000;
+}
+
