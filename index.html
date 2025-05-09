@@ -24,11 +24,11 @@
 	    <script> 
 	        $(function(){
 	            $("#includedPubs").load("publications.html");
-				$("#includedNews").load("news.html")
-				$("#includedPCs").load("committees.html")
-				$("#includedAdvising").load("advising.html")
-				$("#includedTeaching").load("teaching.html")
-				document.getElementById("defaultOpen").click();
+		    $("#includedNews").load("news.html")
+         	    $("#includedPCs").load("committees.html")
+		    $("#includedAdvising").load("advising.html")
+		    $("#includedTeaching").load("teaching.html")
+		    document.getElementById("defaultOpen").click();
 	        });
 		</script>
 		<script>
@@ -57,9 +57,6 @@
 			<div style="float: left">
 				<div style="font-size: 3em; margin: 0.2em 0 0.2em 0">
 					Yang Li<br>
-				</div>
-				<div style="color: gray; font-size: 1em; margin: 0 0 0.5em 0">
-					first last name @ acm dot org
 				</div>
 			</div>
 			<div style="color: gray; font-size: 0.9em; float: right; text-align: right; margin: 2em 2em 0.5em 0">
@@ -136,11 +133,12 @@
 					 <button class="tablinks" onclick="openPubs(event, 'paper')" id="defaultOpen">All</button>
 				     <button class="tablinks" onclick="openPubs(event, 'hci')">Human-Computer Interaction</button>
 				     <button class="tablinks" onclick="openPubs(event, 'ml')">Deep Learning</button>
+					 <button class="tablinks" onclick="openPubs(event, 'blog')">Blogs</button>
 					 <button class="tablinks" onclick="openPubs(event, 'scholar')">Google Scholar</button>
 				 </div>
 				 <!-- <div id="includedPubs"></div>-->
 
-				 <div style="margin: 1em 0 0 0;">
+				<div style="margin: 1em 0 0 0;">
 					 <div id="includedPubs"></div>
 					 <div class="scholar paper">
 					     <p class ="ptitle" >
@@ -149,6 +147,7 @@
 							 </a>
 						 </p>
 					 </div>
+					
         		 </div> <!-- end of paper section -->
 			 </div> <!-- left column end -->
 			 <div id="right_col">
