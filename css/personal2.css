@@ -23,7 +23,12 @@ body {
 	margin: 0 1em 1em 0;
 	border: 1px #ddd solid;
 }
-
+.blog_thumbnail{
+	float:left; 
+	margin: 0 1em 1em 0;
+	border: 1px #ddd solid;
+	width: 300;
+}
 #left_col {
 	float: left;
 	width: 74%;
