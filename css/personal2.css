@@ -48,6 +48,11 @@ body {
   margin: 0 0 1.5em 0
 }
 
+.blog {
+  clear: left; 
+  margin: 0 0 1.5em 0
+}
+
 .ptitle {
 	font-size: 1em;
 	font-weight: plain;
